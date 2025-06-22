@@ -1,0 +1,55 @@
+/* Custom styles */
+.modal {
+    transition: opacity 0.3s ease;
+}
+
+.slide-in {
+    animation: slideIn 0.3s ease-out;
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Status colors */
+.expired {
+    background-color: #fee2e2;
+    border-left: 4px solid #ef4444;
+}
+
+.expiring-soon {
+    background-color: #fef3c7;
+    border-left: 4px solid #f59e0b;
+}
+
+.safe {
+    background-color: #d1fae5;
+    border-left: 4px solid #10b981;
+}
+
+.status-dot {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin-right: 8px;
+}
+
+.expired-dot {
+    background-color: #ef4444;
+}
+
+.expiring-soon-dot {
+    background-color: #f59e0b;
+}
+
+.safe-dot {
+    background-color: #10b981;
+}
